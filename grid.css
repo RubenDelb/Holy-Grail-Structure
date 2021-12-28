@@ -1,0 +1,126 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    display: grid;
+    font-family: 'Fuzzy Bubbles', cursive;
+    background-image: url(/pv_590.jpg);
+    background-size: contain;
+}
+
+.nav-bar {
+    text-align: center;
+    border: solid;
+    border-color: black;
+    border-radius: 10px;
+    color: rgb(245, 230, 170);
+    margin: 10px;
+    background-color: rgba(0, 0, 0, .6);
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 50px;
+    margin: 5px;
+}
+
+button {
+    margin: 1vw;
+    border: solid;
+    border-color: rgb(209, 223, 231, .6);
+    border-width: 2px;
+    border-radius: 10px;
+    background-color: rgba(0, 255, 13, 0.0);
+    width: 15vw;
+}
+
+.buttonLink {
+    text-decoration: none;
+    color: rgb(245, 230, 170);
+    font-weight: bold;
+    font-family: 'Fuzzy Bubbles', cursive;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 3.5fr 0.5fr;
+    align-content: stretch;
+    margin: 10px;
+    position: relative;
+}
+
+.navTitle {
+    margin: 5px;
+    text-align: center;
+}
+
+.section-left {
+    border: solid;
+    border-color: black;
+    border-radius: 10px;
+    background-color: rgb(209, 223, 231, .9);
+    margin: 5px;
+    padding: 10px;
+}
+
+.section-center {
+    text-align: center;
+    border: solid;
+    border-color: black;
+    border-radius: 10px;
+    background-color: rgb(177, 202, 216, .9);
+    margin: 5px;
+    padding: 10px;
+}
+
+.section-right {
+    display: grid;
+    margin: 5px;
+    align-items: center;
+    justify-items: center;
+}
+
+img {
+    width: 15vw;
+}
+
+.surfboardShops {
+    color: darkolivegreen;
+    text-decoration: none;
+    margin: 15px;
+}
+
+.footer {
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: small;
+    color: rgb(245, 230, 170);
+    border: solid;
+    border-radius: 10px;
+    border-color: black;
+    margin: 15px;
+    background-color: rgba(0, 0, 0, .7);
+}
+
+@media screen and (min-width: 0px) and (max-width: 768px) {
+    button {
+        width: 30vw;
+    }
+    .buttons {
+        grid-template-columns: 1fr 1fr;
+        margin: 0 0 0 5vw;
+    }
+    .section-left {
+        display: grid;
+        justify-items: center;
+    }
+    .container {
+        grid-template-columns: 1fr;
+    }
+}

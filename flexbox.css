@@ -1,0 +1,140 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-image: url(/pv_590.jpg);
+    background-size: contain;
+    font-family: 'Fuzzy Bubbles', cursive;
+}
+
+header {
+    border: solid;
+    border-radius: 10px;
+    border-color: black;
+    color: rgb(245, 230, 170);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 10px;
+    background-color: rgba(0, 0, 0, .6);
+}
+
+#title {
+    margin: 20px;
+}
+
+button {
+    font-weight: bold;
+    font-family: 'Fuzzy Bubbles', cursive;
+    color: rgb(245, 230, 170);
+    margin: 20px;
+    border: solid;
+    border-color: rgb(209, 223, 231, .6);
+    border-width: 2px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.0);
+    width: 150px;
+}
+
+.buttonLink {
+    color: rgb(245, 230, 170);
+    font-weight: bold;
+    font-family: 'Fuzzy Bubbles', cursive;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+
+h4 {
+    margin: 5px;
+    text-align: center;
+}
+
+.section-left,
+.section-center {
+    margin: 5px;
+    border: solid;
+    border-radius: 10px;
+}
+
+.section-left {
+    width: 75vw;
+    background-color: rgb(209, 223, 231, .9);
+    padding: 10px;
+}
+
+.listOfLinks {
+    display: flex;
+    flex-direction: column;
+    padding-left: 2vw;
+    text-align: center;
+    list-style-type: none;
+}
+
+li {
+    padding-bottom: 2vh;
+}
+
+.section-center {
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(177, 202, 216, .9);
+}
+
+.section-right {
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    width: 15vw;
+}
+
+a {
+    color: darkolivegreen;
+    text-decoration: none;
+    margin: 15px;
+}
+
+.footer {
+    margin: 15px;
+    text-align: center;
+    font-size: small;
+    color: rgb(245, 230, 170);
+    border: solid;
+    border-radius: 10px;
+    border-color: black;
+    background-color: rgba(0, 0, 0, .7);
+}
+
+@media screen and (min-width: 0px) and (max-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-bar {
+        display: flex;
+        flex-direction: column;
+    }
+    button {
+        margin: 2px;
+        width: 100px;
+    }
+    .section-left {
+        width: auto;
+    }
+    .section-right {
+        border: none;
+        background-color: rgb(209, 223, 231, 0);
+        display: flex;
+        justify-content: center;
+    }
+}
